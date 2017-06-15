@@ -2,9 +2,11 @@ This docker container is used to create cache invalidations for AWS Cloudfront D
 
 # Use
 
+```
 docker run --rm \
   -e "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" \
   -e "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" \
   -e "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}" \
   -e "DISTRIBUTION_ID=${DISTRIBUTION_ID}" \
   tozny/cloudfront-invalidation 
+```
